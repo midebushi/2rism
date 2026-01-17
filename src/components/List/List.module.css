@@ -1,0 +1,70 @@
+.list {
+    display: flex;
+
+    list-style: none;
+    color: white;
+
+}
+
+.listItemLink {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 200;
+
+    color: inherit;
+    opacity: 70%;
+
+    padding: 0 24px;
+
+    transition: opacity ease-in 0.1s;
+}
+
+.listItemLink:hover {
+    opacity: 1;
+}
+
+
+
+@media (max-width: 1200px) {
+    .list {
+        position: fixed;
+        flex-direction: column; 
+
+        z-index: 50;
+        transform: translateY(-120%);
+        left: 0;
+
+        width: 100%;
+        height: auto;
+        opacity: 0%;
+        background-color: #000;
+
+        transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+    }
+
+    .listItem {
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
+        opacity: 0;
+        transform: translateX(-20px);
+        
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                    opacity 0.4s ease;
+    }
+
+    .listOpen {
+        transform: translateY(60%);
+        opacity: 100%;
+    }
+
+    .listOpen .listItem {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .listItemLink {
+        font-weight: 400;
+    }
+}

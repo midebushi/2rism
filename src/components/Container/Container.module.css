@@ -1,0 +1,19 @@
+.container {
+    max-width: 1280px;
+    width: calc(100% - 80px);
+    margin: auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0px;
+
+    color: #000;
+    text-decoration: none;
+}

@@ -1,0 +1,58 @@
+.profile {
+    display: flex;
+    align-items:center;
+
+    gap: 8px;
+
+    text-decoration: none;
+    text-align: right;
+    transition: transform ease-in 0.1s;
+}
+
+.profileText {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profileName {
+    display: block;
+    margin-top: 5px;
+
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+.profilePic {
+    position: relative;
+}
+
+.profileImage {
+    
+    border-radius: 100px;
+}
+
+.profileNotifications {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: #ff0000;
+
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .profileText {
+    display: none;
+  }
+}

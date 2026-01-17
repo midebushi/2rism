@@ -1,0 +1,16 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0px;
+
+    color: #000;
+    text-decoration: none;
+
+}

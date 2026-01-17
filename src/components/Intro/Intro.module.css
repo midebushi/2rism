@@ -1,0 +1,39 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-image: url('/bg-image.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+
+    height: 100%;
+    
+
+    border-radius: 0 0 64px 64px;
+
+    padding-bottom: 100px;
+
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+    margin: 160px auto;
+
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+
+    margin-bottom: 30px;
+    width: calc(100% - 80px);
+}

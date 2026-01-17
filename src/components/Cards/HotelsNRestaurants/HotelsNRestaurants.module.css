@@ -1,0 +1,81 @@
+.card {
+    display: grid;
+    color: inherit;
+    text-decoration: none;
+    width: 300px;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 8px;
+    flex-shrink: 0;
+    
+
+    transition: transform 0.1s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.image {
+    border-radius: 24px;
+
+    width: 100%;
+    height: 364px;
+
+    grid-column: 1 / -1; 
+    grid-row: 1;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 500;
+
+    letter-spacing: 1;
+
+    padding: 4px 0;
+    margin-top: 4px;
+
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    grid-column: 1 / 4; 
+    grid-row: 3;
+}
+
+.locationText {
+    font-size: 14px;
+    font-weight: 300;
+    color: #979797;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 4px 0;
+
+    grid-column: 5 / 6;  
+    grid-row: 3;
+}
+
+.starFilled {
+    color: #FFD700;
+}
+
+.starEmpty {
+    color: #E0E0E0;
+}
+
+.rateNumber {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
