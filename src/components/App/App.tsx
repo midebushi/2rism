@@ -46,10 +46,10 @@ const App = () => {
   ]
 
   const activitiesItems = [
-    { image: '/Cards/Activities/img.jpg', title: 'Sailing' },
-    { image: '/Cards/Activities/img-1.jpg', title: 'Climbing' },
-    { image: '/Cards/Activities/img-2.jpg', title: 'Skiing' },
-    { image: '/Cards/Activities/img-3.jpg', title: 'Hiking' },
+    { image: './Cards/Activities/img.jpg', title: 'Sailing' },
+    { image: './Cards/Activities/img-1.jpg', title: 'Climbing' },
+    { image: './Cards/Activities/img-2.jpg', title: 'Skiing' },
+    { image: './Cards/Activities/img-3.jpg', title: 'Hiking' },
   ]
 
   return (
